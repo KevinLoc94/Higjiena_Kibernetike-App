@@ -24,6 +24,17 @@ with open("Higjiena_Kibernetike.docx", "rb") as file:
         mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     )
 
+# 5. PDF version in English
+with open("Higjiena_Kibernetike_Anglisht.pdf", "rb") as file:
+    st.download_button("📄 Shkarko versionin Anglisht (PDF)", file, file_name="Higjiena_Kibernetike_Anglisht.pdf", mime="application/pdf")
+
+# 6. Word version in English
+with open("Higjiena_Kibernetike_Anglisht.docx", "rb") as file:
+    st.download_button("📝 Shkarko versionin Anglisht (Word)", file, file_name="Higjiena_Kibernetike_Anglisht.docx", mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+
+# 7. Prezantim PowerPoint
+with open("Higjiena_Kibernetike_Prezantim.pptx", "rb") as file:
+    st.download_button("📊 Shkarko prezantimin (PPT)", file, file_name="Higjiena_Kibernetike_Prezantim.pptx", mime="application/vnd.openxmlformats-officedocument.presentationml.presentation")
 
 # Προαιρετική σύνοψη
 st.markdown("### 📝 Përmbledhje")
