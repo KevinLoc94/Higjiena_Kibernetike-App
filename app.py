@@ -9,28 +9,42 @@ st.markdown("**Autorë:** Arlinda Nikolli, Anila Kola, Jonida Prenga  \nNë bash
 st.image("ebook-cover.png", use_container_width=True)
 
 
+# 1. PDF version in Albanian
 with open("Higjiena_Kibernetike.pdf", "rb") as file:
     st.download_button(
-        label="📥 Shkarko e-book-un (PDF)",
+        label="📥 Shkarko e-book-un (PDF) - 🇦🇱 Shqip",
         data=file,
         file_name="Higjiena_Kibernetike.pdf",
         mime="application/pdf"
     )
+
+# 2. Word version in Albanian
 with open("Higjiena_Kibernetike.docx", "rb") as file:
     st.download_button(
-        label="📄 Shkarko e-book-un (Word)",
+        label="📄 Shkarko e-book-un (Word) - 🇦🇱 Shqip",
         data=file,
         file_name="Higjiena_Kibernetike.docx",
         mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     )
 
-# 5. PDF version in English
+# 3. PDF version in English
 with open("Higjiena_Kibernetike_Anglisht.pdf", "rb") as file:
-    st.download_button("📄 Shkarko versionin Anglisht (PDF)", file, file_name="Higjiena_Kibernetike_Anglisht.pdf", mime="application/pdf")
+    st.download_button(
+        label="📄 Download English Version (PDF) - 🇬🇧 English",
+        data=file,
+        file_name="Higjiena_Kibernetike_Anglisht.pdf",
+        mime="application/pdf"
+    )
 
-# 6. Word version in English
+# 4. Word version in English
 with open("Higjiena_Kibernetike_Anglisht.docx", "rb") as file:
-    st.download_button("📝 Shkarko versionin Anglisht (Word)", file, file_name="Higjiena_Kibernetike_Anglisht.docx", mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+    st.download_button(
+        label="📝 Download English Version (Word) - 🇬🇧 English",
+        data=file,
+        file_name="Higjiena_Kibernetike_Anglisht.docx",
+        mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    )
+
 
 # 7. Prezantim PowerPoint
 with open("Higjiena_Kibernetike_Prezantim.pptx", "rb") as file:
